@@ -1,0 +1,98 @@
+@import "config";
+@charset "utf-8";
+html {
+  overflow-x: auto;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6,body, div,hr,p,dl,dt,dd,ul,ol,li,form,fieldset,legend,
+button,input,textarea,th,td,img,figure, header, section{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+body {
+  background: @bodyBg;
+  color: @baseFontColor;
+  font-family: PingFangSC Light,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+table {
+  border-collapse: collapse;
+}
+fieldset, img {
+  border: none;
+}
+ul,li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  &:hover {
+    .pointer;
+  }
+}
+.tc {
+  text-align: center;
+}
+.fl{
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.none {
+  display: none;
+}
+.inline-block {
+  display: inline-block;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 16px;
+
+}
+.webkit-box {
+  display: -webkit-box;
+}
+.flex1 {
+  box-flex: 1;
+  -webkit-box-flex: 1;
+}
+
+.btns{
+  border-radius: 3px;
+  .width(100);
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  .lh(40);
+  cursor: pointer;
+}
+.yellow-btn{
+  background: @yellowBg;
+}
+.white-btn{
+  background: @whiteBg;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #6e7c97;
+}
