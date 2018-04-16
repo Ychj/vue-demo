@@ -1,7 +1,8 @@
 <template>
   <div id="page2">
-    这是page2
+    <h3>这是page2——KPI阶段对比</h3>
     <sub-menu />
+    <div class="echarts-box" id="echarts-bar-box"></div>
   </div>
 </template>
 
@@ -11,5 +12,5 @@
 </script>
 
 <style scoped>
-
+  @import "index.less";
 </style>
